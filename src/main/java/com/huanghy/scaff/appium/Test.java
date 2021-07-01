@@ -58,7 +58,7 @@ public class Test {
 //            driver.findElement(By.id("com.sina.weibo:id/titleSave")).click();
             adDel(driver);
             // “我” ->粉丝
-            appuimUtils.waitAuto(By.xpath("//android.widget.FrameLayout[@content-desc=\"我\"]"), 5).click();
+            AppuimUtils.waitAuto(By.xpath("//android.widget.FrameLayout[@content-desc=\"我\"]"), 5).click();
             appuimUtils.waitAuto(By.xpath("//*[@text='粉丝']"), 10).click();
             appuimUtils.waitAuto(By.xpath("//*[@text='全部粉丝']"), 10).click();
             //获取所有粉丝
